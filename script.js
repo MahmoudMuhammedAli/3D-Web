@@ -6,11 +6,13 @@ const mesh = new THREE.Mesh(geometry, material);
 scene.add(mesh);
 
 //sizes
-const sizes = { width: 800, height: 600 };
+const sizes = { width: window.innerWidth, height:window.innerHeight };
 
 // Camera
 const camera = new THREE.PerspectiveCamera(75, sizes.width / sizes.height);
 camera.position.z = 2;
+camera.position.x = 0;
+camera.position.y = 0;
 scene.add(camera);
 
 //renderer
