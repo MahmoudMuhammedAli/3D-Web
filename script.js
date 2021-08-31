@@ -19,6 +19,7 @@ cube3.position.x = 2;
 group.add(cube1);
 group.add(cube2);
 group.add(cube3);
+group.position.set (0,.5,0) 
 group.scale.set (2,3,2) 
 group.rotation.y = 1;
 //sizes
@@ -26,8 +27,7 @@ const sizes = { width: window.innerWidth, height: window.innerHeight };
 
 // Camera
 const camera = new THREE.PerspectiveCamera(75, sizes.width / sizes.height);
-camera.position.z = 7;
-camera.lookAt(cube3.position)
+camera.position.z = 6;
 scene.add(camera);
 //renderer
 const canvas = document.querySelector(".webgl");
